@@ -1,0 +1,113 @@
+.find-content-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 18px;
+
+  .find-item {
+    flex: 1;
+    flex-basis: 300px;
+
+    margin-top: 32px;
+
+    .item-image {
+      width: 100%;
+      border-radius: 12px;
+      aspect-ratio: 16 / 9;
+      background-color: var(--button-color);
+    }
+
+    .item-title {
+      margin-top: 8px;
+      font-size: var(--title-font-size);
+      font-weight: var(--title-font-weight);
+    }
+
+    .item-desc {
+      margin-top: 4px;
+      font-size: var(--desc-font-size);
+      font-weight: 400;
+      color: var(--desc-color);
+    }
+
+    .item-info {
+      margin-top: 16px;
+      font-size: var(--desc-font-size);
+      font-weight: 400;
+      color: var(--desc-color);
+    }
+
+    .skills {
+      margin-top: 8px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: start;
+      gap: 4px;
+
+      .skill {
+        font-size: var(--desc-font-size);
+        color: var(--text-color);
+        background-color: var(--button-color);
+        padding: 4px 8px;
+        border-radius: 40px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    transition: var(--transition);
+
+    &:hover {
+      cursor: pointer;
+      scale: 1.01;
+    }
+  }
+
+  .find-item-skeleton {
+    flex: 1;
+    flex-basis: 300px;
+
+    margin-top: 32px;
+
+    .image-skeleton {
+      width: 100%;
+      border-radius: 12px;
+      aspect-ratio: 16 / 9;
+    }
+
+    .title-skeleton {
+      margin-top: 16px;
+      height: 26px;
+      width: 90%;
+    }
+
+    .desc-skeleton {
+      margin-top: 8px;
+      height: 26px;
+      width: 70%;
+    }
+
+    .info-skeleton {
+      margin-top: 8px;
+      height: 26px;
+      width: 50%;
+    }
+  }
+
+  .spinner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 72px 0;
+  }
+
+  .skeleton {
+    background-color: var(--button-color);
+    border-radius: 4px;
+  }
+}
